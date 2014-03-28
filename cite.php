@@ -2,7 +2,7 @@
 /*
 Plugin Name: Cite
 Plugin URI: http://wordpress.org/plugins/cite
-Description: Help readers know how to cite your article correctly - use Cite plugin to diplay a box at the bottom of each page/post with reference information.
+Description: Help readers know how to cite your article correctly - use Cite plugin to display a box at the bottom of each page/post with reference information.
 Version: 1.0
 Author: Enigma Plugins
 Author URI: http://enigmaplugins.com/
