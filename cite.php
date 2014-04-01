@@ -3,7 +3,7 @@
 Plugin Name: Cite
 Plugin URI: http://wordpress.org/plugins/cite
 Description: Help readers know how to cite your article correctly - use Cite plugin to display a box at the bottom of each page/post with reference information.
-Version: 1.0
+Version: 1.1
 Author: Enigma Plugins
 Author URI: http://enigmaplugins.com/
 */
@@ -15,7 +15,7 @@ load_plugin_textdomain('cite', false, dirname(plugin_basename(__FILE__)) . '/lan
 
 // Default settings
 $wpcp_default = apply_filters('wpcp_default_setting', array(
-    'setting' => __('Cite this article as: Rowling, JK. (1997-2007). {sitename}: {post_title}. Last accessed {date}. {permalink}', 'cite')
+    'setting' => __('Cite this article as: Rowling, JK. (1997-2007). {sitename}: {post_title}. Published {publication_date}. Last accessed {date}. {permalink}', 'cite')
         ));
 
 
@@ -71,6 +71,7 @@ function wpcp_admin() {
             <p><textarea cols="80" rows="5" name="wpcp_setting[setting]" id="wpcp_setting[setting]" class="wpcp-textarea"><?php echo $wpcp_setting[setting]; ?></textarea></p>
             <p class="wpcp-templates-info"><span><?php _e('Available templates tags:', 'cite') ?></span><br>
                 {date} - <?php _e('the current date', 'cite') ?><br>
+				{publication_date} - <?php _e('date the page/post was published', 'cite') ?><br>
                 {sitename} - <?php _e('your site name taken from Settings > General', 'cite') ?><br>
                 {post_title} - <?php _e('the title of your post/page', 'cite') ?><br>
                 {permalink} - <?php _e('the permalink of the page/post being accessed', 'cite') ?></p>
@@ -87,13 +88,13 @@ add_shortcode('cite', 'cite_shortcode');
 function cite_shortcode() {
     global $wpcp_setting;
     
-    // Getting admin preferred date format
+    // Getting admin preferred date format for current date
     function displayTodaysDate() {
         return date_i18n(get_option('date_format'));
     }
     
-    $find_string = array('{sitename}', '{post_title}', '{date}', '{permalink}');
-    $replace_string = array(get_bloginfo('name'), get_the_title(), displayTodaysDate(), '<a href="' . get_permalink() . '">' . get_permalink() . '</a>');
+    $find_string = array('{sitename}', '{post_title}', '{date}', '{publication_date}', '{permalink}');
+    $replace_string = array(get_bloginfo('name'), get_the_title(), displayTodaysDate(), get_the_date(), '<a href="' . get_permalink() . '">' . get_permalink() . '</a>');
     $edited_setting = str_replace($find_string, $replace_string, $wpcp_setting[setting]);
     return '<div class="wpcp">' . $edited_setting . '</div>';
 }

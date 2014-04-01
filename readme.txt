@@ -17,7 +17,7 @@ Help readers know how to cite your article correctly. Use Cite plugin to display
 = Key Features =
 
 *	Simple & lightweight
-*	Dynamically generate tags such as site name, post title, permalink, last accessed date
+*	Dynamically generate tags such as site name, post title, permalink, publication date, last accessed date
 *   Works in all major browsers - IE7, IE8, IE9, Safari, Firefox, Chrome
 *	Add to any page using shortcode `[cite]`
 
@@ -63,10 +63,16 @@ If you've tried all the obvious stuff and it's still not working please request 
 
 == Changelog ==
 
+= 1.1 =
+* Added publication date template tag
+
 = 1.0 =
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.1 =
+* Added publication date template tag
 
 = 1.0 =
 * Initial release

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Cite\n"
-"POT-Creation-Date: 2014-03-27 15:52+0800\n"
-"PO-Revision-Date: 2014-03-27 15:52+0800\n"
+"POT-Creation-Date: 2014-04-01 11:15+0800\n"
+"PO-Revision-Date: 2014-04-01 11:15+0800\n"
 "Last-Translator: Maeve Lander <maeve@enigmaplugins.com>\n"
 "Language-Team: Enigma Plugins <maeve@enigmaplugins.com>\n"
 "MIME-Version: 1.0\n"
@@ -17,7 +17,7 @@ msgstr ""
 #: cite.php:18
 msgid ""
 "Cite this article as: Rowling, JK. (1997-2007). {sitename}: {post_title}. "
-"Last accessed {date}. {permalink}"
+"Published {publication_date}. Last accessed {date}. {permalink}"
 msgstr ""
 
 #: cite.php:37 cite.php:45 cite.php:69
@@ -44,21 +44,25 @@ msgid "the current date"
 msgstr ""
 
 #: cite.php:74
-msgid "your site name taken from Settings > General"
+msgid "date the page/post was published"
 msgstr ""
 
 #: cite.php:75
-msgid "the title of your post/page"
+msgid "your site name taken from Settings > General"
 msgstr ""
 
 #: cite.php:76
-msgid "the permalink of the page/post being accessed"
+msgid "the title of your post/page"
 msgstr ""
 
 #: cite.php:77
-msgid "UPDATED"
+msgid "the permalink of the page/post being accessed"
 msgstr ""
 
 #: cite.php:78
+msgid "UPDATED"
+msgstr ""
+
+#: cite.php:79
 msgid "Save Changes"
 msgstr ""
