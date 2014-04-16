@@ -3,7 +3,7 @@
 Plugin Name: Cite
 Plugin URI: http://wordpress.org/plugins/cite
 Description: Help readers know how to cite your article correctly - use Cite plugin to display a box at the bottom of each page/post with reference information.
-Version: 1.1
+Version: 1.2
 Author: Enigma Plugins
 Author URI: http://enigmaplugins.com/
 */
@@ -89,9 +89,11 @@ function cite_shortcode() {
     global $wpcp_setting;
     
     // Getting admin preferred date format for current date
+	if(!function_exists('displayTodaysDate')){
     function displayTodaysDate() {
         return date_i18n(get_option('date_format'));
-    }
+	}
+	} 
     
     $find_string = array('{sitename}', '{post_title}', '{date}', '{publication_date}', '{permalink}');
     $replace_string = array(get_bloginfo('name'), get_the_title(), displayTodaysDate(), get_the_date(), '<a href="' . get_permalink() . '">' . get_permalink() . '</a>');

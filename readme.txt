@@ -63,6 +63,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 
 == Changelog ==
 
+= 1.2 =
+* Wrapped function displayTodaysDate in an if statement to avoid calling the function if it is already active 
+
 = 1.1 =
 * Added publication date template tag
 
@@ -70,6 +73,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.2 =
+* Wrapped function displayTodaysDate in an if statement to avoid calling the function if it is already active 
 
 = 1.1 =
 * Added publication date template tag
