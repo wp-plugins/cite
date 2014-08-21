@@ -67,7 +67,7 @@ If you've tried all the obvious stuff and it's still not working please request 
 * Added support for author name
 * Updated default cite text
 * Added reference samples
-Thank you to @jackdougherty for contributing these improvements
+* Thank you to @jackdougherty for contributing these improvements
 
 = 1.2 =
 * Wrapped function displayTodaysDate in an if statement to avoid calling the function if it is already active 
@@ -84,7 +84,7 @@ Thank you to @jackdougherty for contributing these improvements
 * Added support for author name
 * Updated default cite text
 * Added reference samples
-Thank you to @jackdougherty for contributing these improvements
+* Thank you to @jackdougherty for contributing these improvements
 
 = 1.2 =
 * Wrapped function displayTodaysDate in an if statement to avoid calling the function if it is already active 
