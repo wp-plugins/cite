@@ -3,7 +3,7 @@ Contributors: EnigmaWeb
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CEJ9HFWJ94BG4
 Tags: Cite, cite, reference, citation, referencing
 Requires at least: 3.1
-Tested up to: 3.9
+Tested up to: 4.0
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -63,6 +63,12 @@ If you've tried all the obvious stuff and it's still not working please request 
 
 == Changelog ==
 
+= 1.2.1 =
+* Added support for author name
+* Updated default cite text
+* Added reference samples
+Thank you to @jackdougherty for contributing these improvements
+
 = 1.2 =
 * Wrapped function displayTodaysDate in an if statement to avoid calling the function if it is already active 
 
@@ -73,6 +79,12 @@ If you've tried all the obvious stuff and it's still not working please request 
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.2.1 =
+* Added support for author name
+* Updated default cite text
+* Added reference samples
+Thank you to @jackdougherty for contributing these improvements
 
 = 1.2 =
 * Wrapped function displayTodaysDate in an if statement to avoid calling the function if it is already active 
