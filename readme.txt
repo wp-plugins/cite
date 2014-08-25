@@ -63,6 +63,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 
 == Changelog ==
 
+= 1.2.2 =
+* Fixed {date} template tag to get last accessed date (today's date)
+
 = 1.2.1 =
 * Added support for author name
 * Updated default cite text
@@ -79,6 +82,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.2.2 =
+* Fixed {date} template tag to get last accessed date (today's date)
 
 = 1.2.1 =
 * Added support for author name
